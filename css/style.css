@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  padding: 2rem 6rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: #475569;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.9rem 1.4rem;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #cbd5e1;
+  background: white;
+}
+
+.hero-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.score {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.score.red {
+  background: #dc2626;
+}
+
+.section {
+  padding: 5rem 6rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  max-width: 800px;
+  color: #475569;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.step {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.faq-item {
+  margin-top: 1.5rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+}
