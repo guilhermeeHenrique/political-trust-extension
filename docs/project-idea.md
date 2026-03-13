@@ -1,10 +1,10 @@
 # Project Idea
 
 ## Name
-VerifyPolitics
+VerifyNews
 
 ## Main idea
-VerifyPolitics is a browser extension that helps users evaluate the reliability of political information while browsing online.
+VerifyNews is a browser extension that helps users evaluate the reliability of political information while browsing online.
 
 ## Problem
 Young users are exposed to political content online but often do not have the time, motivation, or tools to verify whether this information is reliable.
