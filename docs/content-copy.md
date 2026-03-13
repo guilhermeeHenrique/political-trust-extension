@@ -10,7 +10,7 @@ Une extension de navigateur qui analyse les contenus politiques, affiche un scor
 Aujourd’hui, vérifier une information politique prend du temps. Entre les réseaux sociaux, les contenus viraux et les opinions déguisées en faits, il devient difficile de savoir rapidement ce qui est fiable.
 
 ## Solution section
-VerifyPolitics est une extension qui détecte les contenus politiques, affiche un score visuel de fiabilité et permet d’accéder à une analyse détaillée avec des sources et des explications.
+VerifyNews est une extension qui détecte les contenus politiques, affiche un score visuel de fiabilité et permet d’accéder à une analyse détaillée avec des sources et des explications.
 
 ## How it works
 1. Détecter
