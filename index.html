@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>VerifyNews</title>
+<meta name="description" content="VerifyNews - Extension de navigateur qui analyse les contenus politiques et affiche un score de fiabilité pour vérifier avant de croire ou partager." />
+<title>VerifyNews - Vérifiez la fiabilité de l'information politique</title>
 <link rel="stylesheet" href="css/style.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/icons/favicon.png">
-
 </head>
 <body>
 
@@ -17,9 +17,11 @@
     <nav class="navbar">
       <div class="logo">VerifyNews</div>
       <ul class="nav-links">
-        <li><a href="#problem">Problème</a></li>
+        <li><a href="#probleme">Problème</a></li>
         <li><a href="#solution">Solution</a></li>
+        <li><a href="#comment">Fonctionnement</a></li>
         <li><a href="#score">Score</a></li>
+        <li><a href="#demo">Démo</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
@@ -27,21 +29,22 @@
     <div class="hero-content">
       <div class="hero-text">
         <p class="eyebrow">Extension de vérification politique</p>
-        <h1>Comprendre avant de croire. Vérifier avant de partager.</h1>
+        <h1>Vérifiez la fiabilité d'une information politique en quelques secondes.</h1>
         <p>
-          Une extension de navigateur qui analyse les contenus politiques, affiche un score de fiabilité et vous donne accès à des sources et des explications claires.
+          Une extension de navigateur qui analyse les contenus politiques, affiche un score de fiabilité et vous donne les sources pour comprendre avant de croire ou partager.
         </p>
+        <p class="hero-subtitle">Comprendre avant de croire. Vérifier avant de partager.</p>
         <div class="hero-buttons">
-          <a href="#solution" class="btn primary">Découvrir le prototype</a>
-          <a href="#demo" class="btn secondary">Voir la démo</a>
+          <a href="#demo" class="btn primary">Découvrir le prototype</a>
+          <a href="#comment" class="btn secondary">Voir comment ça marche</a>
         </div>
       </div>
 
       <div class="hero-mockup">
         <div class="mockup-card">
           <span class="score red">Douteux</span>
-          <h3>Exemple d’analyse</h3>
-          <p class="mockup-line">Absence de source primaire</p>
+          <h3>Analyse en temps réel</h3>
+          <p class="mockup-line">Aucune source primaire mentionnée</p>
           <p class="mockup-line">Formulation émotionnelle détectée</p>
           <p class="mockup-line">Affirmation non recoupée</p>
           <button class="mini-btn">Voir les détails</button>
@@ -50,137 +53,338 @@
     </div>
   </header>
 
-  <section id="problem" class="section section-light">
-    <div class="section-header">
-      <p class="eyebrow">Le problème</p>
-      <h2>Vérifier une information politique prend trop de temps.</h2>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <h3>Trop d’informations</h3>
-        <p>Le flux politique en ligne est rapide, contradictoire et difficile à filtrer.</p>
+  <section id="probleme" class="section section-light">
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">Le problème</p>
+        <h2>Aujourd'hui, vérifier une information politique prend du temps.</h2>
+        <p class="section-text">
+          Entre les réseaux sociaux, les titres sensationnalistes, les opinions déguisées en faits et la multiplication des sources, il devient difficile de savoir rapidement ce qui est fiable. Résultat : on doute, on ignore… ou on partage sans vérifier.
+        </p>
       </div>
-      <div class="card">
-        <h3>Pas assez de repères</h3>
-        <p>Il est difficile de savoir si un contenu repose sur des faits, une opinion ou une manipulation.</p>
-      </div>
-      <div class="card">
-        <h3>Peu de temps</h3>
-        <p>Les utilisateurs n’ont pas envie d’ouvrir dix onglets pour vérifier une seule information.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Trop d'informations</h3>
+          <p>Le flux est rapide, contradictoire et difficile à filtrer.</p>
+        </div>
+        <div class="card">
+          <h3>Pas assez de temps</h3>
+          <p>Vérifier une information demande plusieurs recherches et beaucoup d'effort.</p>
+        </div>
+        <div class="card">
+          <h3>Peu de repères clairs</h3>
+          <p>Il est difficile de distinguer un fait, une opinion ou une information manipulée.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="solution" class="section">
-    <div class="section-header">
-      <p class="eyebrow">La solution</p>
-      <h2>Une extension qui s’intègre directement à la navigation.</h2>
-      <p class="section-text">
-        VerifyNews détecte les contenus politiques, affiche un score visuel simple et permet d’accéder à une analyse plus détaillée avec des sources consultables.
-      </p>
-    </div>
+  <section id="solution" class="section section-gray">
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">La solution</p>
+        <h2>Une extension pensée pour vérifier sans interrompre votre navigation.</h2>
+        <p class="section-text">
+          L'extension analyse automatiquement les contenus politiques consultés en ligne. Elle affiche un score visuel, signale les éléments potentiellement douteux et vous permet d'accéder à une analyse détaillée avec sources et explications.
+        </p>
+      </div>
 
-    <div class="steps">
-      <div class="step">
-        <h3>1. Détecter</h3>
-        <p>Repère les pages ou contenus liés à la politique.</p>
+      <div class="flow-grid">
+        <div class="flow-item">
+          <div class="flow-icon">1</div>
+          <h3>Vous ouvrez une page politique</h3>
+          <p>Navigation normale sur le web</p>
+        </div>
+        <div class="flow-item">
+          <div class="flow-icon">2</div>
+          <h3>L'extension détecte le contenu</h3>
+          <p>Analyse automatique en arrière-plan</p>
+        </div>
+        <div class="flow-item">
+          <div class="flow-icon">3</div>
+          <h3>Un score apparaît</h3>
+          <p>Indicateur visuel immédiat</p>
+        </div>
+        <div class="flow-item">
+          <div class="flow-icon">4</div>
+          <h3>Vous ouvrez les détails</h3>
+          <p>Sources et explications accessibles</p>
+        </div>
       </div>
-      <div class="step">
-        <h3>2. Analyser</h3>
-        <p>Identifie les signaux de doute, les formulations trompeuses et les affirmations sensibles.</p>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="section-content">
+      <div class="steps">
+        <div class="step">
+          <h3>Détecter</h3>
+          <p>Repère les contenus liés à l'actualité politique.</p>
+        </div>
+        <div class="step">
+          <h3>Évaluer</h3>
+          <p>Affiche un indicateur visuel simple et rapide.</p>
+        </div>
+        <div class="step">
+          <h3>Expliquer</h3>
+          <p>Montre pourquoi un contenu semble fiable, douteux ou incomplet.</p>
+        </div>
+        <div class="step">
+          <h3>Vérifier</h3>
+          <p>Redirige vers des sources et éléments de preuve.</p>
+        </div>
       </div>
-      <div class="step">
-        <h3>3. Comparer</h3>
-        <p>Croise l’information avec des sources reconnues et d’autres références fiables.</p>
+    </div>
+  </section>
+
+  <section id="comment" class="section section-gray">
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">Fonctionnement</p>
+        <h2>Comment fonctionne l'outil ?</h2>
       </div>
-      <div class="step">
-        <h3>4. Expliquer</h3>
-        <p>Affiche un score, des indices visuels et donne accès aux détails sur demande.</p>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-number">1</div>
+          <h3>Analyse du contenu</h3>
+          <p>Le texte de la page est analysé pour identifier les affirmations, les formulations trompeuses ou l'absence de contexte.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">2</div>
+          <h3>Croisement avec des sources</h3>
+          <p>L'outil compare les informations à des sources reconnues, des vérifications existantes et d'autres références fiables.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">3</div>
+          <h3>Attribution d'un score</h3>
+          <p>Un score visuel permet de comprendre rapidement le niveau de fiabilité du contenu.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">4</div>
+          <h3>Accès à une lecture détaillée</h3>
+          <p>L'utilisateur peut cliquer pour consulter les sources, les explications et les éléments ayant influencé le résultat.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="score" class="section section-light">
-    <div class="section-header">
-      <p class="eyebrow">Le système de score</p>
-      <h2>Un indicateur simple, avec un niveau de détail si nécessaire.</h2>
-    </div>
-
-    <div class="score-grid">
-      <div class="score-box green">
-        <h3>Fiable</h3>
-        <p>Le contenu semble cohérent avec plusieurs sources reconnues.</p>
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">Le score</p>
+        <h2>Un score simple à lire, avec un niveau de détail si vous voulez aller plus loin.</h2>
       </div>
-      <div class="score-box orange">
-        <h3>À vérifier</h3>
-        <p>Le contenu manque de contexte ou présente des éléments incertains.</p>
-      </div>
-      <div class="score-box red-box">
-        <h3>Douteux</h3>
-        <p>Le contenu présente de forts signaux de manipulation ou de contradiction.</p>
-      </div>
-    </div>
 
-    <p class="note">
-      Le score ne remplace pas le jugement humain. Il sert à alerter, orienter et faciliter la vérification.
-    </p>
-  </section>
+      <div class="score-grid">
+        <div class="score-box green">
+          <h3>Fiable</h3>
+          <p>Le contenu semble cohérent avec plusieurs sources reconnues.</p>
+        </div>
+        <div class="score-box orange">
+          <h3>À vérifier</h3>
+          <p>Le contenu présente des zones d'incertitude, un manque de contexte ou des affirmations difficilement vérifiables.</p>
+        </div>
+        <div class="score-box red-box">
+          <h3>Douteux</h3>
+          <p>Le contenu présente des signaux forts de désinformation, de manipulation ou de contradiction avec des sources fiables.</p>
+        </div>
+      </div>
 
-  <section id="demo" class="section">
-    <div class="section-header">
-      <p class="eyebrow">Démo</p>
-      <h2>Voir l’outil en action</h2>
-      <p class="section-text">
-        Lorsqu’un contenu paraît douteux, l’utilisateur peut cliquer sur l’extension pour consulter les détails, les sources et les raisons du score affiché.
+      <p class="note">
+        Le score ne remplace pas le jugement humain. Il sert à alerter, orienter et faciliter la vérification.
       </p>
     </div>
+  </section>
 
-    <div class="demo-panel">
-      <div class="demo-left">
-        <h3>Page politique consultée</h3>
-        <p>Un article ou un post est lu normalement.</p>
+  <section id="demo" class="section section-gray">
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">Démo</p>
+        <h2>Voir l'outil en action</h2>
+        <p class="section-text">
+          Lorsqu'un contenu paraît douteux, l'utilisateur peut cliquer sur l'extension pour consulter les détails, les sources et les raisons du score affiché.
+        </p>
       </div>
-      <div class="demo-right">
-        <h3>Résultat affiché</h3>
-        <ul>
-          <li>Score visuel immédiat</li>
-          <li>Signalement des éléments douteux</li>
-          <li>Accès aux sources et à l’explication</li>
-        </ul>
+
+      <div class="demo-visual">
+        <div class="demo-header">
+          <div class="demo-dot"></div>
+          <div class="demo-dot"></div>
+          <div class="demo-dot"></div>
+        </div>
+        <div class="demo-content">
+          <div class="demo-title">Nouvelle réforme controversée : ce qu'il faut savoir</div>
+          <div class="demo-text">
+            Le gouvernement vient d'annoncer une réforme qui pourrait changer radicalement le système actuel. Des milliers de personnes sont concernées et les réactions sont unanimes...
+          </div>
+          <div class="demo-badge">
+            <span class="score red">Douteux</span>
+            <h3 style="margin-bottom: 0.5rem; font-size: 1rem; color: #0f172a;">Signaux détectés</h3>
+            <ul class="demo-warnings">
+              <li>Aucune source primaire mentionnée</li>
+              <li>Formulation émotionnelle détectée</li>
+              <li>Affirmation controversée non recoupée</li>
+            </ul>
+            <button class="mini-btn">Voir l'analyse complète</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-panel">
+        <div class="demo-left">
+          <h3>Page politique consultée</h3>
+          <p>Un article ou un post est lu normalement pendant la navigation.</p>
+        </div>
+        <div class="demo-right">
+          <h3>Résultat affiché</h3>
+          <ul>
+            <li>Score visuel immédiat</li>
+            <li>Signalement des éléments douteux</li>
+            <li>Accès aux sources et à l'explication</li>
+            <li>Distinction faits / opinions / éléments à vérifier</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">Pour les jeunes</p>
+        <h2>Pensé pour une génération qui navigue vite, mais veut comprendre mieux.</h2>
+        <p class="section-text">
+          Les jeunes utilisent déjà l'IA, consomment l'information sur des formats rapides et veulent accéder à l'essentiel sans passer par de longs articles. L'extension leur permet de gagner du temps, de réduire la confusion et de mieux comprendre les enjeux politiques.
+        </p>
+      </div>
+
+      <div class="benefit-grid">
+        <div class="card">
+          <h3>Rapide</h3>
+          <p>Comprendre l'essentiel sans faire plusieurs recherches.</p>
+        </div>
+        <div class="card">
+          <h3>Accessible</h3>
+          <p>Langage simple, visuel clair, informations structurées.</p>
+        </div>
+        <div class="card">
+          <h3>Pédagogique</h3>
+          <p>Aide à distinguer faits, opinions et éléments à vérifier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-gray">
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">Confiance</p>
+        <h2>Transparence, sources et esprit critique.</h2>
+        <p class="section-text">
+          Notre objectif n'est pas de décider à votre place, mais de vous aider à vérifier plus vite et plus clairement.
+        </p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">✓</div>
+          <h3>Sources visibles</h3>
+          <p>Chaque résultat s'appuie sur des sources consultables.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">⚖</div>
+          <h3>Neutralité méthodologique</h3>
+          <p>L'outil évalue la qualité de l'information, pas l'opinion politique.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">📊</div>
+          <h3>Explication du résultat</h3>
+          <p>Le score est accompagné d'éléments compréhensibles.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🎯</div>
+          <h3>L'utilisateur garde le contrôle</h3>
+          <p>L'outil suggère, l'utilisateur juge.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="faq" class="section section-light">
-    <div class="section-header">
-      <p class="eyebrow">FAQ</p>
-      <h2>Questions fréquentes</h2>
-    </div>
+    <div class="section-content">
+      <div class="section-header">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions fréquentes</h2>
+      </div>
 
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3>Est-ce que l’outil dit automatiquement la vérité ?</h3>
-        <p>Non. L’outil aide à vérifier plus vite en montrant des signaux, des sources et un niveau de fiabilité.</p>
-      </div>
-      <div class="faq-item">
-        <h3>L’outil est-il politiquement neutre ?</h3>
-        <p>Il n’évalue pas une opinion politique, mais des critères de fiabilité comme les sources, le contexte et la cohérence.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Pourquoi faire confiance au résultat ?</h3>
-        <p>Parce que les sources sont visibles, les résultats sont expliqués et l’utilisateur conserve son esprit critique.</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Est-ce que l'outil dit automatiquement ce qui est vrai ou faux ?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Non. Il propose une estimation argumentée à partir de signaux, de sources et d'éléments de contexte. L'objectif est d'aider à vérifier, pas de remplacer le jugement critique.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>L'outil est-il politiquement neutre ?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Il ne juge pas les opinions, mais les critères de fiabilité de l'information : sources, contexte, formulation, cohérence. L'outil évalue la qualité méthodologique, pas la position politique.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Quelles sources sont utilisées ?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Des sources reconnues, des vérifications existantes et des références consultables par l'utilisateur. Toutes les sources utilisées pour établir le score sont accessibles dans l'analyse détaillée.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Mes données sont-elles protégées ?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>L'extension ne cherche pas à profiler l'utilisateur politiquement. Les traitements sont limités au contenu analysé. Aucune donnée personnelle n'est collectée ou stockée.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Dois-je ouvrir une nouvelle page à chaque fois ?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Non. Le score apparaît directement pendant la navigation. Les détails sont accessibles en un clic si vous souhaitez approfondir.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section cta-section">
-    <h2>Prêt à découvrir le prototype ?</h2>
-    <p>Testez la démo et participez à la construction d’un outil plus transparent et plus utile.</p>
-    <a href="#" class="btn primary">Tester le prototype</a>
+    <div class="section-content">
+      <h2>Prêt à tester une nouvelle façon de vérifier l'information politique ?</h2>
+      <p>Découvrez le prototype, testez le concept et aidez-nous à construire un outil plus clair, plus utile et plus transparent.</p>
+      <div class="cta-buttons">
+        <a href="#demo" class="btn primary">Tester la démo</a>
+        <a href="#" class="btn secondary">Rejoindre la liste d'attente</a>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
-    <p>© 2026 VerifyNews — Prototype étudiant</p>
+    <p>© 2026 VerifyNews — Prototype développé pour faciliter la vérification de l'information politique</p>
   </footer>
 
   <script src="js/script.js"></script>
