@@ -1,4 +1,4 @@
-# VerifyPolitics
+# VerifyNews
 
 Prototype website for a browser extension that helps users evaluate the reliability of political information online.
 
